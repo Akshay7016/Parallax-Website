@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* perspective is used to on z-axis. give any value to perspective */
+  perspective: 10px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background-img {
+  transform: translateZ(-40px) scale(5.8);
+}
+
+.foreground-img {
+  transform: translateZ(-20px) scale(3);
+}
+
+.background-img,
+.foreground-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 6rem;
+  font-size: 9rem;
+  letter-spacing: 7px;
+  color: white;
+  text-shadow: 0 0 10px rgb(0 0 0 / 0.4);
+}
+
+section {
+  background-color: rgb(45 45 45);
+  color: white;
+  padding: 5rem 0;
+}
+
+.secHeading {
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+}
+
+.bg {
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  background-color: white;
+  color: rgb(45, 45, 45);
+  padding: 0.5rem 2.3rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.bg1 {
+  background-image: url(./images/sport-1.jpg);
+}
+
+.bg2 {
+  background-image: url(./images/sport-2.jpg);
+}
+
+.bg3 {
+  background-image: url(./images/sport-3.jpg);
+}
